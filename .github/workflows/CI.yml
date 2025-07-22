@@ -27,4 +27,7 @@ jobs:
 
       - name: Lint code
         run: |
-          flake8 app run.py
+          flake8 app.py run.py
+
+          - name: Run flake8
+
