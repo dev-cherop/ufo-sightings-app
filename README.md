@@ -59,24 +59,16 @@ cd ufo-sightings-app
 2. Install dependencies
 Using Docker (Recommended)
 bash
-Copy
-Edit
 docker build -t dev-cherop/ufo-sightings-app .
 Using Pip
 bash
-Copy
-Edit
 pip install -r requirements.txt
 ▶️ Usage
 Using Docker
 bash
-Copy
-Edit
 docker run -it dev-cherop/ufo-sightings-app
 Using Python directly
 bash
-Copy
-Edit
 python app.py
 Replace app.py if your actual entry point script has a different name.
 
@@ -85,20 +77,12 @@ Make sure everything works by running tests.
 
 Using Docker
 bash
-Copy
-Edit
 docker run dev-cherop/ufo-sightings-app pytest
 Using Pip
 bash
-Copy
-Edit
 pytest
 🤝 Contributing
 We welcome contributions! Feel free to fork the project and submit a pull request. Please follow conventional commit messages and include tests for any changes.
 
 📄 License
 This project is licensed under the MIT License.
-
-markdown
-Copy
-Edit
