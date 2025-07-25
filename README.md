@@ -1,19 +1,71 @@
-# UFO Sightings Visualization App 
-A Flask web app that analyzes and visualizes UFO sightings from a public dataset.
+UFO-SIGHTINGS-APP
+Uncover Mysteries, Inspire Wonder, Explore the Unknown
 
-## Tech Stack
-- Python, Flask
-- Pandas / Matplotlib / Plotly (if used)
-- Docker
-- GitHub Actions for CI
+Built with the tools and technologies:
 
-##  Features
-- Interactive web dashboard for sightings
-- Location/time-based filtering
-- CI pipeline with GitHub Actions
-- Dockerized app for easy deployment
+Table of Contents
+Overview
 
-##  Setup
-```bash
-docker build -t ufo-app .
-docker run -p 5000:5000 ufo-app
+Getting Started
+
+Prerequisites
+
+🛠️ Installation
+Build the ufo-sightings-app from its source and set up its dependencies:
+
+Clone the repository:
+
+Bash
+
+> git clone https://github.com/dev-cherop/ufo-sightings-app
+Navigate to the project directory:
+
+Bash
+
+> cd ufo-sightings-app
+Install the dependencies:
+
+Using Docker (Recommended for a consistent environment):
+
+Bash
+
+> docker build -t dev-cherop/ufo-sightings-app .
+Using Pip (for direct Python environment setup):
+
+Bash
+
+> pip install -r requirements.txt
+▶️ Usage
+Once installed, you can launch the application:
+
+Using Docker:
+
+Bash
+
+docker run -it {image_name}
+(Replace {image_name} with dev-cherop/ufo-sightings-app or your chosen image tag)
+
+Using Pip:
+
+Bash
+
+python {entrypoint}
+(Replace {entrypoint} with the actual entry point script, e.g., python app.py if your main script is app.py)
+
+🐛 Testing
+Ensure everything is working perfectly by running the tests. The ufo-sightings-app utilizes the {test_framework} test framework.
+
+Using Docker:
+
+Bash
+
+echo 'INSERT-TEST-COMMAND-HERE'
+(You'll need to replace 'INSERT-TEST-COMMAND-HERE' with the actual Docker command to run your tests, e.g., docker run {image_name} pytest)
+
+Using Pip:
+
+Bash
+
+pytest
+
+pytest
