@@ -4,7 +4,6 @@
 
 The UFO Sightings App is a Python-based application that collects, analyzes, and presents data on unidentified flying object (UFO) sightings. Perfect for enthusiasts, data scientists, or anyone curious about unexplained aerial phenomena.
 
----
 
 ##  Built With
 
@@ -14,7 +13,7 @@ The UFO Sightings App is a Python-based application that collects, analyzes, and
 - pytest (for testing)
 - [Add other frameworks you used: e.g., Flask, Pandas]
 
----
+
 
 ##  Table of Contents
 
@@ -27,19 +26,17 @@ The UFO Sightings App is a Python-based application that collects, analyzes, and
 - [Contributing](#contributing)  
 - [License](#license)  
 
----
 
 ##  Overview
 
 The UFO Sightings App allows users to explore historical UFO reports with filtering, visualization, and data exploration features. Easily deployable via Docker or as a local Python app.
 
----
+
 
 ##  Getting Started
 
 These instructions will get your development environment up and running.
 
----
 
 ### Prerequisites
 
@@ -47,7 +44,7 @@ These instructions will get your development environment up and running.
 - Docker installed and running (optional but recommended)
 - Pip package manager
 
----
+
 
 ###  Installation
 
