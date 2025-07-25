@@ -57,11 +57,10 @@ pip install -r requirements.txt
 ▶️ Usage
 Using Docker
 docker run -it dev-cherop/ufo-sightings-app
-Replace dev-cherop/ufo-sightings-app with your image tag if different.
+dev-cherop/ufo-sightings-app 
 
 Using Pip / Direct Execution
 python app.py
-Replace app.py with your actual entry point script.
 
 🐛 Testing
 Ensure everything is working correctly by running tests.
