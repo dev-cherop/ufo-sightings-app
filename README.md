@@ -70,8 +70,6 @@ docker run -it dev-cherop/ufo-sightings-app
 Using Python directly
 bash
 python app.py
-Replace app.py if your actual entry point script has a different name.
-
  Testing
 Make sure everything works by running tests.
 
@@ -81,8 +79,8 @@ docker run dev-cherop/ufo-sightings-app pytest
 Using Pip
 bash
 pytest
- Contributing
+Contributing
 We welcome contributions! Feel free to fork the project and submit a pull request. Please follow conventional commit messages and include tests for any changes.
 
-📄 License
+### License
 This project is licensed under the MIT License.
