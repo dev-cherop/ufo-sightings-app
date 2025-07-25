@@ -18,87 +18,87 @@ The UFO Sightings App is a Python-based application that collects, analyzes, and
 
 ## 📑 Table of Contents
 
-- [Overview](#overview)
+- [Overview](#overview)  
+- [Getting Started](#getting-started)  
+  - [Prerequisites](#prerequisites)  
+  - [Installation](#installation)  
+- [Usage](#usage)  
+- [Testing](#testing)  
+- [Contributing](#contributing)  
+- [License](#license)  
 
-Uncover Mysteries, Inspire Wonder, Explore the Unknown
+---
 
-Welcome to the UFO Sightings App — a project built to collect, analyze, and explore unidentified aerial phenomena. Whether you're a skeptic, believer, or data enthusiast, this app provides a gateway into the strange and fascinating world of UFO sightings.
+## 🌌 Overview
 
-🧰 Built With
-Python
+The UFO Sightings App allows users to explore historical UFO reports with filtering, visualization, and data exploration features. Easily deployable via Docker or as a local Python app.
 
-Docker
+---
 
-Pip
+## 🚀 Getting Started
 
-Your favorite frameworks and libraries (e.g., Flask, FastAPI, Pandas, etc.)
+These instructions will get your development environment up and running.
 
-##📑 Table of Contents
-Overview
+---
 
-Getting Started
+### ✅ Prerequisites
 
-Prerequisites
+- Python 3.8 or newer
+- Docker installed and running (optional but recommended)
+- Pip package manager
 
-Installation
+---
 
-Usage
+### 🛠️ Installation
 
-Testing
+#### 1. Clone the repository
 
-Contributing
-
-License
-
-🌌 Overview
-The UFO Sightings App is a tool for data collection and exploration of reported UFO sightings. It allows users to analyze trends, investigate anomalies, and visualize patterns using real-world data.
-
-🚀 Getting Started
-These instructions will help you set up the project on your local machine for development and testing purposes.
-
-✅ Prerequisites
-Python 3.8+
-
-Docker (recommended for a consistent environment)
-
-Pip (optional if not using Docker)
-
-🛠️ Installation
-1. Clone the Repository
+```bash
 git clone https://github.com/dev-cherop/ufo-sightings-app
 cd ufo-sightings-app
-
-2. Install Dependencies
+2. Install dependencies
 Using Docker (Recommended)
+bash
+Copy
+Edit
 docker build -t dev-cherop/ufo-sightings-app .
-
 Using Pip
+bash
+Copy
+Edit
 pip install -r requirements.txt
-
 ▶️ Usage
 Using Docker
+bash
+Copy
+Edit
 docker run -it dev-cherop/ufo-sightings-app
-dev-cherop/ufo-sightings-app 
-
-Using Pip / Direct Execution
+Using Python directly
+bash
+Copy
+Edit
 python app.py
+Replace app.py if your actual entry point script has a different name.
 
 🐛 Testing
-Ensure everything is working correctly by running tests.
+Make sure everything works by running tests.
 
 Using Docker
+bash
+Copy
+Edit
 docker run dev-cherop/ufo-sightings-app pytest
 Using Pip
-
+bash
+Copy
+Edit
 pytest
-Update the test command as needed based on your test framework (e.g., unittest, pytest).
-
 🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-Feel free to fork the repository and submit a pull request.
+We welcome contributions! Feel free to fork the project and submit a pull request. Please follow conventional commit messages and include tests for any changes.
 
 📄 License
 This project is licensed under the MIT License.
 
-
-
+markdown
+Copy
+Edit
