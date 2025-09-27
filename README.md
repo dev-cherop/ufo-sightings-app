@@ -1,84 +1,78 @@
-#  UFO Sightings App
+# UFO Sightings Predictor
 
-**Uncover Mysteries, Inspire Wonder, Explore the Unknown**
+**Author:** devcherop  
+  
 
-The UFO Sightings App is a Python-based application that collects, analyzes, and presents data on unidentified flying object (UFO) sightings. Perfect for enthusiasts, data scientists, or anyone curious about unexplained aerial phenomena.
+---
 
+## Project Overview
+The **UFO Sightings Predictor** is a Flask web application that predicts UFO sightings based on input features using a pre-trained machine learning model (`ufod-model.pkl`). The project is Dockerized and includes a **GitHub Actions workflow** for CI/CD.
 
-##  Built With
+---
 
-- Python 3.8+
-- Docker
-- Pip
-- pytest (for testing)
-- [Add other frameworks you used: e.g., Flask, Pandas]
+## Features
+- Predict UFO sightings based on input features.
+- Web interface built with Flask and templates.
+- Styled using CSS in `static/css`.
+- Pre-trained model stored as `ufod-model.pkl`.
+- Docker support for containerized deployment.
+- Continuous Integration with GitHub Actions (`.github/workflows/CI.yml`).
 
+---
 
+## Installation
 
-##  Table of Contents
+### Local Setup
 
-- [Overview](#overview)  
-- [Getting Started](#getting-started)  
-  - [Prerequisites](#prerequisites)  
-  - [Installation](#installation)  
-- [Usage](#usage)  
-- [Testing](#testing)  
-- [Contributing](#contributing)  
-- [License](#license)  
+1. **Clone the repository:**
 
+git clone https://github.com/dev-cherop/UFO-Predictor.git
 
-##  Overview
-
-The UFO Sightings App allows users to explore historical UFO reports with filtering, visualization, and data exploration features. Easily deployable via Docker or as a local Python app.
-
-
-
-##  Getting Started
-
-These instructions will get your development environment up and running.
+cd UFO-Predictor
+Create a virtual environment and activate it:
 
 
-### Prerequisites
+python -m venv venv
 
-- Python 3.8 or newer
-- Docker installed and running (optional but recommended)
-- Pip package manager
+source venv/bin/activate   # Linux/Mac
+
+venv\Scripts\activate      # Windows
+
+Install dependencies:
 
 
-
-###  Installation
-
-#### 1. Clone the repository
-
-```bash
-git clone https://github.com/dev-cherop/ufo-sightings-app
-cd ufo-sightings-app
-2. Install dependencies
-Using Docker (Recommended)
-bash
-docker build -t dev-cherop/ufo-sightings-app .
-Using Pip
-bash
 pip install -r requirements.txt
- Usage
-Using Docker
-bash
-docker run -it dev-cherop/ufo-sightings-app
-Using Python directly
-bash
-python app.py
- Testing
-Make sure everything works by running tests.
-
-Using Docker
-bash
-docker run dev-cherop/ufo-sightings-app pytest
-Using Pip
-bash
-pytest
-Contributing
-We welcome contributions! Feel free to fork the project and submit a pull request. Please follow conventional commit messages and include tests for any changes.
+Run the Flask app:
 
 
-### License
-This project is licensed under the MIT License.
+python run.py
+Access the app:
+Open http://127.0.0.1:5000 in your browser.
+
+Docker Setup
+
+Build the Docker image:
+
+
+docker build -t ufo-predictor .
+
+Run the container:
+
+
+docker run -p 5000:5000 ufo-predictor
+
+Open http://127.0.0.1:5000 in your browser.
+
+Usage
+
+1.Navigate to the web interface.
+
+2.Provide the necessary input features.
+
+3.Click “Predict” to get UFO sighting predictions.
+
+Notes
+Ensure ufod-model.pkl is in the project root.
+
+CI/CD workflow runs automatically on GitHub Actions (.github/workflows/CI.yml).
+
